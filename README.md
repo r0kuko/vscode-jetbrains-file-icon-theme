@@ -1,0 +1,126 @@
+# JetBrains New UI File Icon Theme Extended for VS Code
+
+> Forked from [fogio-org/vscode-jetbrains-file-icon-theme](https://github.com/fogio-org/vscode-jetbrains-file-icon-theme)
+> (MIT, with the original author's permission). This fork adds first-class
+> `.kts`, `build.gradle.kts` and `settings.gradle.kts` icon mappings.
+
+The goal of the JetBrains New UI File Icon Theme Extended is to reduce visual clutter and give you more space for your code and thoughts.
+
+[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=r0kuko.jetbrains-file-icon-theme):
+
+![VS Code Marketplace Version](https://vsmarketplacebadges.dev/version-short/r0kuko.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=VERSION)&nbsp;
+![VS Code Marketplace Rating](https://vsmarketplacebadges.dev/rating-short/r0kuko.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=RATING)&nbsp;
+![VS Code Marketplace Downloads](https://vsmarketplacebadges.dev/downloads-short/r0kuko.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=DOWNLOADS)&nbsp;
+![VS Code Marketplace Installs](https://vsmarketplacebadges.dev/installs-short/r0kuko.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=INSTALLS)
+
+[Open VSX](https://open-vsx.org/extension/r0kuko/jetbrains-file-icon-theme):
+
+![Open VSX Version](https://img.shields.io/open-vsx/v/r0kuko/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=VERSION)&nbsp;
+![Open VSX Rating](https://img.shields.io/open-vsx/rating/r0kuko/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=RATING)&nbsp;
+![Open VSX Downloads](https://img.shields.io/open-vsx/dt/r0kuko/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=DOWNLOADS)&nbsp;
+![Open VSX Release Date](https://img.shields.io/open-vsx/release-date/r0kuko/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=RELEASE%20DATE)
+
+I hope this theme will be the one you enjoy working with day and night.
+
+---
+
+Check out our compatible extensions
+
+| <img src="https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-product-icon-theme/refs/heads/main/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-color-theme/refs/heads/main/assets/img/icon.png" width="75"> |
+| :---: | :---: | :---: |
+| JetBrains New UI<br>**File Icon Theme** | JetBrains New UI<br>**Product Icon Theme** | JetBrains New UI<br>**Color Theme** |
+| You are here | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-product-icon-theme) | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-color-theme) |
+
+---
+
+## Preview
+
+### Folders icons
+
+![Preview folders icons](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/preview_folders.png)
+
+### File extensions icons
+
+![Preview file extensions icons](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/preview_file_extensions.png)
+
+### File names icons
+
+Icons for reserved file names
+
+![Preview file names icons](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/preview_file_names.png)
+
+### Icons for go test files (experimental)
+
+![Preview go test files](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/preview_go_test_files.png)
+
+Activation guide is located below.
+
+## Install
+
+### File icon theme
+
+![Select theme](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/guide_select_theme.png)
+
+You can choose icons pack for dark or light theme. An "Auto" theme is also available that adapts to the color theme.
+
+### Enable Icons for go test files (experimental)
+
+VS Code does not allow defining an icon for a file using a regular expression. However, we have implemented a workaround for this.
+
+This feature is experimental, in case of any problems we are waiting for an issue to solve the problem as quickly as possible
+
+By default, this functionality is disabled. You can enable it through the Settings UI:
+
+![guide_enable_go_test_icons](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/guide_enable_go_test_icons.png)
+
+or settings.json file:
+
+```json
+"jetbrains-file-icon-theme.enableGoTestIcons": true,
+```
+
+After enabling this setting, the theme begins to automatically add *_test.go files with a special icon. However, due to vscode limitations, the icons are cached and to see the special icon you need to restart ide. We decided not to add automatic restart in order not to cause inconvenience to users.
+
+So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Window`
+
+### Font
+
+You can use [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font with the JetBrains New UI File Icon Theme Extended.
+
+VS Code doesn't provide clear functionality for adding a custom font to color theme... But I managed to add the font to the File icon theme!
+
+> **Important! To use the JetBrains Mono font, the File Icon Theme must be set!**
+
+Then there are 2 ways to enable the new font:
+
+#### Settings UI
+
+![Change font in settings UI](https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/guide_change_font_settings_ui.jpg)
+
+> **It is very important to specify the font family exactly `JetBrainsMono`, without spaces!**
+
+#### settings.json file
+
+Add the following line to your settings.json file:
+
+```json
+"editor.fontFamily": "JetBrainsMono, Consolas, 'Courier New', monospace",
+```
+
+#### Extras
+
+Also, there are some additional settings that you can apply both in the Settings UI and in settings.json file:
+
+```json
+"editor.fontSize": 13,
+"editor.fontLigatures": true, // ">=" to "ï¿? etc
+"terminal.integrated.fontFamily": "JetBrainsMono",
+"terminal.integrated.fontSize": 13,
+```
+
+## Credits
+
+I express my deep gratitude to the JetBrains team for their work. Here are links to open resources used to create this theme:
+
+- JetBrains icons: [https://jetbrains.design/intellij/resources/icons_list/](https://jetbrains.design/intellij/resources/icons_list/)
+- JetBrains Mono font: [https://www.jetbrains.com/lp/mono/](https://www.jetbrains.com/lp/mono/)
