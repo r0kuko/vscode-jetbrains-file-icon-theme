@@ -26,7 +26,7 @@ I hope this theme will be the one you enjoy working with day and night.
 
 Check out our compatible extensions
 
-| <img src="https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-product-icon-theme/refs/heads/main/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-color-theme/refs/heads/main/assets/img/icon.png" width="75"> |
+| <img src="https://raw.githubusercontent.com/r0kuko/vscode-jetbrains-file-icon-theme/refs/heads/main/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-product-icon-theme/refs/heads/master/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-color-theme/refs/heads/master/assets/img/icon.png" width="75"> |
 | :---: | :---: | :---: |
 | JetBrains New UI<br>**File Icon Theme** | JetBrains New UI<br>**Product Icon Theme** | JetBrains New UI<br>**Color Theme** |
 | You are here | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-product-icon-theme) | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-color-theme) |
@@ -113,7 +113,7 @@ Also, there are some additional settings that you can apply both in the Settings
 
 ```json
 "editor.fontSize": 13,
-"editor.fontLigatures": true, // ">=" to "ï¿? etc
+"editor.fontLigatures": true, // ">=" to "ï¿½? etc
 "terminal.integrated.fontFamily": "JetBrainsMono",
 "terminal.integrated.fontSize": 13,
 ```
