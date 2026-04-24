@@ -72,6 +72,18 @@
         "file_kotlin_light": {
             "iconPath": "./icons/file/kotlin.svg"
         },
+        "file_kotlin_gradle_script_light": {
+            "iconPath": "./icons/file/kotlinGradleScript.svg"
+        },
+        "file_kotlin_script_light": {
+            "iconPath": "./icons/file/kotlinScript.svg"
+        },
+        "file_kotlin_js_light": {
+            "iconPath": "./icons/file/kotlinJs.svg"
+        },
+        "file_kotlin_native_light": {
+            "iconPath": "./icons/file/kotlinNative.svg"
+        },
         "file_ignored_light": {
             "iconPath": "./icons/file/ignored.svg"
         },
@@ -422,10 +434,10 @@
         ".vscode": "folder_idea_light"
     },
     "fileNames": {
-        "build.gradle.kts": "file_kotlin_light",
-        "settings.gradle.kts": "file_kotlin_light",
-        "build.gradle": "file_kotlin_light",
-        "settings.gradle": "file_kotlin_light",
+        "build.gradle.kts": "file_kotlin_gradle_script_light",
+        "settings.gradle.kts": "file_kotlin_gradle_script_light",
+        "build.gradle": "file_kotlin_gradle_script_light",
+        "settings.gradle": "file_kotlin_gradle_script_light",
         "dune": "file_dune_light",
         "dune-project": "file_dune_light",
         ".gitignore": "file_gitignore_light",
@@ -500,7 +512,7 @@
         "erb": "file_erb_light",
         "sass": "file_scss_light",
         "kt": "file_kotlin_light",
-        "kts": "file_kotlin_light",
+        "kts": "file_kotlin_script_light",
         "json": "file_json_light",
         "jsonc": "file_json_light",
         "json5": "file_json_light",

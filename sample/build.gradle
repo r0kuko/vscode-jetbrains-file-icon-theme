@@ -1,0 +1,10 @@
+// Groovy DSL build file (.gradle)
+// This file tests the build.gradle icon in the JetBrains icon theme.
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
