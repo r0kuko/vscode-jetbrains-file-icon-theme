@@ -1,5 +1,5 @@
 {
-  "name": "jetbrains-file-icon-theme",
+  "name": "jetbrains-file-icon-theme-extended",
   "displayName": "JetBrains New UI File Icon Theme Extended",
   "description": "JetBrains IDEs New UI inspired icon theme. Minimize distractions and boost productivity. Forked from fogio/jetbrains-file-icon-theme with extra .kts and build.gradle.kts support.",
   "publisher": "r0kuko",
