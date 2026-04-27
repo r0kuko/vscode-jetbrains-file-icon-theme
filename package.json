@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/r0kuko/vscode-jetbrains-file-icon-theme.git"
   },
-  "icon": "assets/img/icon.png",
+  "icon": "assets/img/icon-enhanced.png",
   "engines": {
     "vscode": "^1.21.0"
   },
@@ -74,6 +74,11 @@
           "type": "boolean",
           "default": false,
           "description": "Experimental: Enable special icons for Go test files (*_test.go)"
+        },
+        "jetbrains-file-icon-theme.enableKotlinContentIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable content-aware icons for Kotlin files (.kt)"
         }
       }
     },
@@ -87,17 +92,27 @@
   "activationEvents": [
     "onStartupFinished",
     "onCommand:jetbrains-file-icon-theme.updateGoTestIcons",
-    "onLanguage:go"
+    "onLanguage:go",
+    "onLanguage:kotlin"
   ],
-  "main": "./src/extension.js",
+  "main": "./dist/extension.js",
   "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepackage": "npm run test && npm run compile",
     "validate:manifest": "node scripts/validate-manifest.js",
     "validate": "node scripts/validate-icon-themes.js",
     "package": "vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/vscode": "^1.116.0",
     "@vscode/vsce": "^3.0.0",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
   }
 }
