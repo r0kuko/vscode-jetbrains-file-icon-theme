@@ -84,6 +84,33 @@
         "file_kotlin_native": {
             "iconPath": "./icons/file/kotlinNative_dark.svg"
         },
+        "file_kotlin_class": {
+            "iconPath": "./icons/file/kotlinClass_dark.svg"
+        },
+        "file_kotlin_abstract_class": {
+            "iconPath": "./icons/file/kotlinAbstractClass_dark.svg"
+        },
+        "file_kotlin_data_class": {
+            "iconPath": "./icons/file/kotlinClass_dark.svg"
+        },
+        "file_kotlin_sealed_class": {
+            "iconPath": "./icons/file/kotlinClass_dark.svg"
+        },
+        "file_kotlin_object": {
+            "iconPath": "./icons/file/kotlinObject_dark.svg"
+        },
+        "file_kotlin_interface": {
+            "iconPath": "./icons/file/kotlinInterface_dark.svg"
+        },
+        "file_kotlin_enum": {
+            "iconPath": "./icons/file/kotlinEnum_dark.svg"
+        },
+        "file_kotlin_annotation": {
+            "iconPath": "./icons/file/kotlinAnnotation_dark.svg"
+        },
+        "file_kotlin_typealias": {
+            "iconPath": "./icons/file/kotlinTypeAlias_dark.svg"
+        },
         "file_ignored": {
             "iconPath": "./icons/file/ignored_dark.svg"
         },
@@ -393,6 +420,9 @@
         "file_groovy": {
             "iconPath": "./icons/file/groovy_dark.svg"
         },
+        "file_gradle": {
+            "iconPath": "./icons/file/gradle_dark.svg"
+        },
         "file_schema": {
             "iconPath": "./icons/file/schema_dark.svg"
         }
@@ -439,8 +469,8 @@
     "fileNames": {
         "build.gradle.kts": "file_kotlin_gradle_script",
         "settings.gradle.kts": "file_kotlin_gradle_script",
-        "build.gradle": "file_kotlin_gradle_script",
-        "settings.gradle": "file_kotlin_gradle_script",
+        "build.gradle": "file_gradle",
+        "settings.gradle": "file_gradle",
         "dune": "file_dune",
         "dune-projecT": "file_dune",
         ".gitignore": "file_gitignore",
@@ -488,6 +518,12 @@
         "postcss.config.cjs": "file_postcss",
         "postcss.config.ts": "file_postcss",
         "angular.json": "file_angular",
+        "tsconfig.json": "file_config",
+        "tsconfig.app.json": "file_config",
+        "tsconfig.lib.json": "file_config",
+        "tsconfig.spec.json": "file_config",
+        "tsconfig.node.json": "file_config",
+        "tsconfig.build.json": "file_config",
         ".eslintrc": "file_eslint",
         ".eslintrc.cjs": "file_eslint",
         ".eslintrc.js": "file_eslint",
@@ -503,7 +539,17 @@
         "main.go": "file_go_run",
         "conftest.py": "file_python_tests",
         "__init__.py": "file_python_console",
-        "Jenkinsfile": "file_jenkins"
+        "Jenkinsfile": "file_jenkins",
+        "Aliases.kt": "file_kotlin_typealias",
+        "AppConfig.kt": "file_kotlin_object",
+        "BaseRepository.kt": "file_kotlin_abstract_class",
+        "Inject.kt": "file_kotlin_annotation",
+        "MainTest.kt": "file_kotlin_class",
+        "Result.kt": "file_kotlin_sealed_class",
+        "User.kt": "file_kotlin_data_class",
+        "UserRepository.kt": "file_kotlin_interface",
+        "UserRole.kt": "file_kotlin_enum",
+        "UserService.kt": "file_kotlin_class"
     },
     "fileExtensions": {
         "ml": "file_ml",

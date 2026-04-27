@@ -84,6 +84,33 @@
         "file_kotlin_native_light": {
             "iconPath": "./icons/file/kotlinNative.svg"
         },
+        "file_kotlin_class_light": {
+            "iconPath": "./icons/file/kotlinClass.svg"
+        },
+        "file_kotlin_abstract_class_light": {
+            "iconPath": "./icons/file/kotlinAbstractClass.svg"
+        },
+        "file_kotlin_data_class_light": {
+            "iconPath": "./icons/file/kotlinClass.svg"
+        },
+        "file_kotlin_sealed_class_light": {
+            "iconPath": "./icons/file/kotlinClass.svg"
+        },
+        "file_kotlin_object_light": {
+            "iconPath": "./icons/file/kotlinObject.svg"
+        },
+        "file_kotlin_interface_light": {
+            "iconPath": "./icons/file/kotlinInterface.svg"
+        },
+        "file_kotlin_enum_light": {
+            "iconPath": "./icons/file/kotlinEnum.svg"
+        },
+        "file_kotlin_annotation_light": {
+            "iconPath": "./icons/file/kotlinAnnotation.svg"
+        },
+        "file_kotlin_typealias_light": {
+            "iconPath": "./icons/file/kotlinTypeAlias.svg"
+        },
         "file_ignored_light": {
             "iconPath": "./icons/file/ignored.svg"
         },
@@ -390,6 +417,9 @@
         "file_groovy_light": {
             "iconPath": "./icons/file/groovy.svg"
         },
+        "file_gradle_light": {
+            "iconPath": "./icons/file/gradle.svg"
+        },
         "file_schema": {
             "iconPath": "./icons/file/schema.svg"
         }
@@ -436,8 +466,8 @@
     "fileNames": {
         "build.gradle.kts": "file_kotlin_gradle_script_light",
         "settings.gradle.kts": "file_kotlin_gradle_script_light",
-        "build.gradle": "file_kotlin_gradle_script_light",
-        "settings.gradle": "file_kotlin_gradle_script_light",
+        "build.gradle": "file_gradle_light",
+        "settings.gradle": "file_gradle_light",
         "dune": "file_dune_light",
         "dune-project": "file_dune_light",
         ".gitignore": "file_gitignore_light",
@@ -485,6 +515,12 @@
         "postcss.config.cjs": "file_postcss_light",
         "postcss.config.ts": "file_postcss_light",
         "angular.json": "file_angular_light",
+        "tsconfig.json": "file_config_light",
+        "tsconfig.app.json": "file_config_light",
+        "tsconfig.lib.json": "file_config_light",
+        "tsconfig.spec.json": "file_config_light",
+        "tsconfig.node.json": "file_config_light",
+        "tsconfig.build.json": "file_config_light",
         ".eslintrc": "file_eslint_light",
         ".eslintrc.cjs": "file_eslint_light",
         ".eslintrc.js": "file_eslint_light",
@@ -500,7 +536,17 @@
         "main.go": "file_go_run_light",
         "conftest.py": "file_python_tests_light",
         "__init__.py": "file_python_console_light",
-        "Jenkinsfile": "file_jenkins"
+        "Jenkinsfile": "file_jenkins",
+        "Aliases.kt": "file_kotlin_typealias_light",
+        "AppConfig.kt": "file_kotlin_object_light",
+        "BaseRepository.kt": "file_kotlin_abstract_class_light",
+        "Inject.kt": "file_kotlin_annotation_light",
+        "MainTest.kt": "file_kotlin_class_light",
+        "Result.kt": "file_kotlin_sealed_class_light",
+        "User.kt": "file_kotlin_data_class_light",
+        "UserRepository.kt": "file_kotlin_interface_light",
+        "UserRole.kt": "file_kotlin_enum_light",
+        "UserService.kt": "file_kotlin_class_light"
     },
     "fileExtensions": {
         "ml": "file_ml_light",
