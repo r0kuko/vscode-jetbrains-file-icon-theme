@@ -6,12 +6,12 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Extension (sample/)",
+			"name": "Extension (sample/projects/gradle-kotlin)",
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}",
-				"${workspaceFolder}/sample"
+				"${workspaceFolder}/sample/projects/gradle-kotlin"
 			]
 		}
 	]
