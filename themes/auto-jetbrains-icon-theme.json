@@ -1394,19 +1394,5 @@
             "bpmn": "file_schema_light",
             "arb": "file_json_light"
         }
-    },
-    "fonts": [
-        {
-            "id": "JetBrainsMono",
-            "src": [
-                {
-                    "path": "./fonts/JetBrainsMono-Regular.woff",
-                    "format": "woff"
-                }
-            ],
-            "weight": "normal",
-            "style": "normal",
-            "size": "100%"
-        }
-    ]
+    }
 }

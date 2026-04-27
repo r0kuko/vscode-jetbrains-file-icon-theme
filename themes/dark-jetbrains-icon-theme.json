@@ -699,19 +699,5 @@
         "groovy": "file_groovy",
         "bpmn": "file_schema",
         "arb": "file_json"
-    },
-    "fonts": [
-        {
-            "id": "JetBrainsMono",
-            "src": [
-                {
-                    "path": "./fonts/JetBrainsMono-Regular.woff",
-                    "format": "woff"
-                }
-            ],
-            "weight": "normal",
-            "style": "normal",
-            "size": "100%"
-        }
-    ]
+    }
 }
