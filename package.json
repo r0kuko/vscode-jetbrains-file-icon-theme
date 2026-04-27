@@ -3,7 +3,7 @@
   "displayName": "JetBrains New UI File Icon Theme",
   "description": "JetBrains IDEs New UI inspired icon theme. Extra .kts and build.gradle.kts support.",
   "publisher": "r0kuko",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "homepage": "https://github.com/r0kuko/vscode-jetbrains-file-icon-theme",
   "bugs": {
