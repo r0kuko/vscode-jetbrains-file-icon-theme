@@ -1,6 +1,6 @@
 {
   "name": "jetbrains-newui-file-icon-theme",
-  "displayName": "JetBrains New UI File Icon Theme",
+  "displayName": "JetBrains New UI File Icon Theme (Enhanced)",
   "description": "JetBrains IDEs New UI inspired icon theme. Extra .kts and build.gradle.kts support.",
   "publisher": "r0kuko",
   "version": "0.1.1",
