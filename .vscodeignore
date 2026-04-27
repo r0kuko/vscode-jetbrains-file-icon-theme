@@ -7,5 +7,11 @@ assets/examples/**
 coverage/**
 scripts/**
 node_modules/**
+src/**
+tests/**
+sample/**
 *.vsix
 package-lock.json
+bun.lock
+tsconfig.json
+vitest.config.ts

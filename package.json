@@ -15,7 +15,7 @@
   },
   "icon": "assets/img/icon-enhanced.png",
   "engines": {
-    "vscode": "^1.21.0"
+    "vscode": "^1.116.0"
   },
   "categories": [
     "Themes"

@@ -16,34 +16,30 @@ jobs:
   release:
     name: Validate, package & publish
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: bun install --frozen-lockfile
 
       - name: Compile TypeScript
-        run: npm run compile
+        run: bun run compile
 
       - name: Run tests
-        run: npm test
+        run: bun run test
 
       - name: Validate extension manifest
-        run: npm run validate:manifest
+        run: bun run validate:manifest
 
       - name: Validate icon themes
-        run: npm run validate
+        run: bun run validate
 
       - name: Verify tag matches package.json version
         if: github.event_name == 'push'
         run: |
-          PKG_VERSION=$(node -p "require('./package.json').version")
+          PKG_VERSION=$(bun -e "console.log(require('./package.json').version)")
           TAG_VERSION="${GITHUB_REF_NAME#v}"
           if [ "$PKG_VERSION" != "$TAG_VERSION" ]; then
             echo "::error::Tag '$GITHUB_REF_NAME' does not match package.json version '$PKG_VERSION'"
@@ -51,7 +47,7 @@ jobs:
           fi
 
       - name: Package VSIX
-        run: npx --yes @vscode/vsce package --no-dependencies
+        run: bunx --bun @vscode/vsce package --no-dependencies
 
       - name: Upload VSIX artifact
         uses: actions/upload-artifact@v4
@@ -70,10 +66,10 @@ jobs:
         if: env.VSCE_PAT != ''
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx --yes @vscode/vsce publish --no-dependencies --pat "$VSCE_PAT"
+        run: bunx --bun @vscode/vsce publish --no-dependencies --pat "$VSCE_PAT"
 
       - name: Publish to Open VSX (optional)
         if: env.OVSX_PAT != ''
         env:
           OVSX_PAT: ${{ secrets.OVSX_PAT }}
-        run: npx --yes ovsx publish *.vsix --pat "$OVSX_PAT"
+        run: bunx --bun ovsx publish *.vsix --pat "$OVSX_PAT"

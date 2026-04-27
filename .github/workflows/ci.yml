@@ -14,32 +14,28 @@ jobs:
   validate:
     name: Validate & package
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: bun install --frozen-lockfile
 
       - name: Compile TypeScript
-        run: npm run compile
+        run: bun run compile
 
       - name: Run tests
-        run: npm test
+        run: bun run test
 
       - name: Validate extension manifest
-        run: npm run validate:manifest
+        run: bun run validate:manifest
 
       - name: Validate icon themes
-        run: npm run validate
+        run: bun run validate
 
       - name: Package VSIX (smoke test)
-        run: npx --yes @vscode/vsce package --no-dependencies --out "jetbrains-newui-file-icon-theme-${{ github.sha }}.vsix"
+        run: bunx --bun @vscode/vsce package --no-dependencies --out "jetbrains-newui-file-icon-theme-${{ github.sha }}.vsix"
 
       - name: Upload VSIX artifact
         uses: actions/upload-artifact@v4
