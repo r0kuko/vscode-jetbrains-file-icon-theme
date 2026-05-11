@@ -201,6 +201,18 @@
         "file_shell_light": {
             "iconPath": "./icons/file/shell.svg"
         },
+        "file_ps_module_light": {
+            "iconPath": "./icons/file/psShellModule.svg"
+        },
+        "file_ps_data_light": {
+            "iconPath": "./icons/file/psShellData.svg"
+        },
+        "file_ps_xml_light": {
+            "iconPath": "./icons/file/psShellXml.svg"
+        },
+        "file_ps_test_light": {
+            "iconPath": "./icons/file/psShellTest.svg"
+        },
         "file_h_light": {
             "iconPath": "./icons/file/h.svg"
         },
@@ -602,6 +614,11 @@
         "bash": "file_shell_light",
         "bat": "file_shell_light",
         "ps1": "file_shell_light",
+        "psm1": "file_ps_module_light",
+        "psd1": "file_ps_data_light",
+        "ps1xml": "file_ps_xml_light",
+        "Test.ps1": "file_ps_test_light",
+        "test.ps1": "file_ps_test_light",
         "h": "file_h_light",
         "hh": "file_h_light",
         "hpp": "file_h_light",

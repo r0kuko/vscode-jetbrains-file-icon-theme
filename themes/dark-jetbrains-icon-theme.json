@@ -201,6 +201,18 @@
         "file_shell": {
             "iconPath": "./icons/file/shell_dark.svg"
         },
+        "file_ps_module": {
+            "iconPath": "./icons/file/psShellModule_dark.svg"
+        },
+        "file_ps_data": {
+            "iconPath": "./icons/file/psShellData_dark.svg"
+        },
+        "file_ps_xml": {
+            "iconPath": "./icons/file/psShellXml_dark.svg"
+        },
+        "file_ps_test": {
+            "iconPath": "./icons/file/psShellTest_dark.svg"
+        },
         "file_h": {
             "iconPath": "./icons/file/h_dark.svg"
         },
@@ -605,6 +617,11 @@
         "bash": "file_shell",
         "bat": "file_shell",
         "ps1": "file_shell",
+        "psm1": "file_ps_module",
+        "psd1": "file_ps_data",
+        "ps1xml": "file_ps_xml",
+        "Test.ps1": "file_ps_test",
+        "test.ps1": "file_ps_test",
         "h": "file_h",
         "hh": "file_h",
         "hpp": "file_h",
