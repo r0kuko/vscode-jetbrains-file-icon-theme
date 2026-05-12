@@ -622,6 +622,8 @@
         "ps1xml": "file_ps_xml",
         "Test.ps1": "file_ps_test",
         "test.ps1": "file_ps_test",
+        "Tests.ps1": "file_ps_test",
+        "tests.ps1": "file_ps_test",
         "h": "file_h",
         "hh": "file_h",
         "hpp": "file_h",

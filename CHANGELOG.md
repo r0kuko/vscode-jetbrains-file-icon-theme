@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.3
+
+- Also match `*.Tests.ps1` / `*.tests.ps1` (plural) for PowerShell test icon
+
 ## 0.1.2
 
 - Add PowerShell ecosystem icons: `.psm1` (module), `.psd1` (data), `.ps1xml` (XML manifest), `*.Test.ps1` / `*.test.ps1` (test files)

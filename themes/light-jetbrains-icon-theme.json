@@ -619,6 +619,8 @@
         "ps1xml": "file_ps_xml_light",
         "Test.ps1": "file_ps_test_light",
         "test.ps1": "file_ps_test_light",
+        "Tests.ps1": "file_ps_test_light",
+        "tests.ps1": "file_ps_test_light",
         "h": "file_h_light",
         "hh": "file_h_light",
         "hpp": "file_h_light",
